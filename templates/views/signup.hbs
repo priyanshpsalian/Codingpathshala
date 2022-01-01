@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingPATSHALA</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
+</head>
+
+<body>
+
+    {{>navbar}}
+   
+    <main>
+
+        <div class="signupcontainer">
+            <form class="signup" action="/register" method="POST">
+                <h2>Sign up</h2>
+                <p>
+                    <input type="text" name="name" placeholder="*Name" required>
+                    <hr>
+                </p>
+                <p>
+                    <input type="text" name="phone" placeholder="*Mobile number" required>
+                    <hr>
+                </p>
+                <p>
+                <p>Enter your date of birth</p>
+                <input type="date" name="birth" placeholder="*Date of birth" required>
+                <hr>
+                </p>
+
+                <p>
+                    <input type="text" name="branch" placeholder="*Enter your Branch" required>
+                    <hr>
+                </p>
+                <p>
+                    <input type="text" name="year" placeholder="*Enter your year" required>
+                    <hr>
+                </p>
+                <p>
+                    <input type="email" name="email" id="email" placeholder="*Email Address" required>
+                    <hr>
+                </p>
+
+                <p>
+                    <input type="password" name="password" id="password" placeholder="*Create a password" required>
+                    <hr>
+                </p>
+                <p>
+                    Use at least one letter,one numeral, and seven characters
+                </p>
+
+
+                <input class="submit" type="submit" value="Sign up for CodingPATSHALA">
+
+                <p class="form_footer">By clicking "Sign up for CodingPATSHALA", you agree to our <a href="#">terms of
+                        service</a> and <a href="#"> privacy policy</a>.
+                    We'll ocassionally send you account related emails.
+
+                </p>
+                <input class="submit" type="button" value="Sign in if you're already a member">
+            </form>
+
+           
+
+        </div>
+
+    </main>
+  <footer>
+
+        <div class="lowerfooter">
+            <p>&copy; All Rights Reserved. Designed by <a href="About_us.html" rel="nofollow"
+                    style="color: aquamarine">WebVoyagers</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.maindiv {
+    width: 100vw;
+    min-height:80vh;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.innerdiv{
+    background-color: rgb(140, 255, 255);
+    width: 356px;
+height: 316px;
+padding: 25px 25px;
+border: solid 2px;
+border-radius: 13px;
+}
+
+.innerdiv button{
+    margin-top: 50px;
+}
+
+.innerdiv h4{
+    margin-bottom: 16px;
+}
+
+li{
+    list-style: none;
+    line-height: 31px;
+}
+
+#results{
+    border: solid 2px darkblue;
+    padding: 18px;
+    margin: 10px;
+        margin-top: 10px;
+    background-color: #003f77;
+    color: white;
+    margin-top: 37px;
+    border-radius: 12px;
+}
+
+
+/* Do not change these   */
+.showscore{
+    display: none;
+}
+
+.hidenext, .hidden11{
+    display: none;
+}

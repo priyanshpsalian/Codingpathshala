@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>CodingPATSHALA</title>
+   <link rel="stylesheet" href="/css/video.css">
+   <link href="/css/style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+   {{>navbar}}
+   <hr>
+   <main>
+      <div class="wrapper">
+         <input type="checkbox" id="btn" hidden>
+         <label for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+         </label>
+         <div id="sidebar">
+            <div class="title">
+               C. P
+            </div>
+            <ul class="list-items">
+               <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
+               <li><a href="/quizins"><i class="fas fa-list-ol"></i>Quiz</a></li>
+               <li><a href="/assingment"><i class="fas fa-address-book"></i>Assingment</a></li>
+               <li><a href="/studymaterial"><i class="fal fa-marker"></i>Study Materials</a></li>
+               <li><a href="#"><i class="fas fa-user"></i>About us</a></li>
+               <li><a href="#"><i class="fas fa-envelope"></i>Contact us</a></li>
+               <div class="icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+               </div>
+            </ul>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="videocontainer">
+            <video id="video" width="590" controls autoplay>
+               <source src="#" type="video/mp4" />
+            </video>
+            
+            
+            <h2>{{topic}} tutorial </h2>
+         </div>
+         <div class="chatcontainer">
+            <h2>Discussion Forum</h2>
+            <div id="HCB_comment_box" class="comments">
+               loading...
+            </div>
+         </div>
+      </div>
+      <div class="hidden1">{{Name}} </div>
+      <div class="hidden2">{{Path}}</div>
+   </main>
+   <footer>
+
+      <div class="lowerfooter">
+         <p>&copy; All Rights Reserved. Designed by <a href="About_us.html" rel="nofollow"
+               style="color: aquamarine">WebVoyagers</a></p>
+      </div>
+   </footer>
+
+   <script src="/js/chat.js"></script>
+   <script type="text/javascript"
+      id="hcb"> /*<!--*/ if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"), h = "https://www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24W869igFDJ.4H4zgdIpTyg." + "&opts=16798&num=10&ts=1632147319170"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })(); /*-->*/</script>
+</body>
+
+</html>

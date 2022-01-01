@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingPATSHALA</title>
+    <link rel="icon" href="/img/logo1-icon.png" type="image/x-icon">
+
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href=" /css/Font_animation.css"> -->
+
+</head>
+
+<body>
+    {{>navbar}}
+    <hr>
+    <br><br>
+    <div class="containermc">
+        <span class="text1"></span>
+        <span class="text2">Learning Today,<br>Leading Tomorrow</span>
+    </div>
+
+
+    <div class="slider-box">
+        <div id="slider">
+            <img src="/img/slider1.jpg" alt="">
+            <img src="/img/slider2.jpg" alt="not able to download on your browser">
+            <img src="/img/slider3.jpg" alt="">
+
+        </div>
+        <div class="indicators">
+            <span id="btn1" class="active"></span>
+            <span id="btn2"></span>
+            <span id="btn3"></span>
+            <span id="btn4"></span>
+        </div>
+    </div>
+    <!--cards section-->
+    <section class="cards" id="cards">
+        <div class="max-width">
+            <div class="cards-content">
+                <div class="card">
+                    <div class="box">
+                        <a href="/htmlcss">
+                            <img src="/img/htmlcsscource.jpeg" height="210px" alt="">
+                            <div class="text">Html & Css</div>
+                            <p>
+                                HTML is an acronym which stands for Hyper Text Markup Language which
+                                is used for creating web pages and web applications
+                                Cascading Style Sheets (CSS) is a style sheet language used for describing
+                                the presentation of a document written in a markup language. CSS is a
+
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="/reactjs">
+                            <img src="/img/reactjscourse.jpg" height="210px" alt="">
+                            <div class="text">React Js</div>
+                            <p>
+                                ReactJS is JavaScript library used for building reusable UI components. It
+                                encourages the creation of reusable UI components, which present data that
+                                changes over time.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="/nodejs">
+                            <img src="/img/nodejscourse.png" height="210px" alt="">
+                            <div class="text">Node Js</div>
+                            <p>
+                                Node.js is a powerful framework developed on Chrome’s V8 JavaScript
+                                engine that compiles the JavaScript directly into the native machine code. It is
+                                generally used for large-scale application development, especially for video
+                                streaming sites, single page application, and other web applications.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="full">
+        <div class="whatwedo">
+            <h2>WHAT WE DO</h2>
+            We provide you with video lectures of various tutors about web development.
+            We also provide a one-to-one chat option to discuss doubts with various
+            professionals
+            We provide quizzes and assignments to our students to challenge themselves for
+            the knowledge they have.
+            We also aim at providing the best possible study materials to provide enhance
+            knowledge
+            We foster our students’ love for technology, encourage them to try new and exciting things, and give them a
+            solid foundation to build on. We aim to provide a safe learning environment with a welcoming atmosphere
+            which creates a sense of belonging amongst our learners.
+        </div>
+        <div class="photo">
+            <img width="527px" src="/img/slider1.jpg" alt="">
+
+        </div>
+    </div>
+    <div class="back" id="contact">
+        <div class="contain">
+            <div class="text">
+                Contact us
+            </div>
+            <form action="#">
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">First Name*</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Last Name*</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Email Address*</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Website Name*</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data textarea">
+                        <textarea rows="8" cols="80" required></textarea>
+                        <br />
+                        <div class="underline"></div>
+                        <label for="">Write your message*</label>
+                        <br />
+                        <div class="form-row submit-btn" style="align-self: center;">
+                            <div class="input-data">
+                                <div class="inner"></div>
+                                <input type="submit" value="submit">
+                            </div>
+                        </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="signedin">{{Signedin}}</div>
+    {{!-- <a href="/quizins" rel="nofollow" style="color: rgb(0, 4, 255)">Quiz</a></p> --}}
+    {{!-- <h1>
+        <span><a href="/temphtml/about.html">w</a></span>
+        <span>o</span>
+        <span>o</span>
+        <span>h</span>
+        <span>o</span>
+        <span>o</span>
+        <span>o</span>
+        <span>!</span>
+    </h1> --}}
+    {{>footer}}
+    <script src="/js/home.js"></script>
+</body>
+
+</html>

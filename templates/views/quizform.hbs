@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    {{>navbar}}
+
+    <div class="container">
+        <div class="row" style="justify-content:center;;">
+            <div class="col-6">
+                <form id="myForm" onsubmit="handleFormSubmit(this)">
+                    <p class="h4 mb-4 text-center">Quiz questions</p>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="question no.">Question no.</label>
+                            <input type="text" class="form-control" id="question no." name="question no."
+                                placeholder="Qno." required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="topic">Topic</label>
+                            <input type="text" class="form-control" id="topic" name="topic"
+                                placeholder="Enter topic name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="question">Question</label>
+                        <input type="question" class="form-control" id="question" name="question"
+                            placeholder="Enter a question" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="a">Option A</label>
+                            <input type="text" class="form-control" id="a" name="a" placeholder="Enter option A"
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="b">Option B</label>
+                            <input type="text" class="form-control" id="b" name="b" placeholder="Enter option B"
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="c">Option C</label>
+                            <input type="text" class="form-control" id="c" name="c" placeholder="Enter option C"
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="d">Option D</label>
+                            <input type="text" class="form-control" id="d" name="d" placeholder="Enter option D"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="answer">Answer</label>
+                        <input type="tel" class="form-control" id="answer" name="answer" placeholder="Answer" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <button type="submit" class="btn btn-primary btn-block">Add Question</button>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                    </div>
+                    {{!-- <button type="submit" class="btn btn-primary btn-block">Submit</button> --}}
+                </form>
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

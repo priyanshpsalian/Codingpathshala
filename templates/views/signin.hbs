@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingPATSHALA</title>
+   <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/signup.css" rel="stylesheet"> 
+</head>
+<body>
+
+    {{>navbar}}
+    <main>
+
+        <div class="signupcontainer">
+            <form action="/signin" method="POST">
+            <h2>Sign in</h2>
+         
+          <br>
+          <p>
+               Email <br><input type="email" name="email" id="email" placeholder="you@example.com"  required>
+               <hr>
+          </p>
+          <br>
+          <p>
+               Password <br><input type="password" name="password" id="password" placeholder="Enter your password" required>
+               <hr>
+          </p>
+          <br>
+
+           <input class="submit" type="submit" value="Sign in">
+           <br> <br>
+
+           <p class="form_footer">By clicking "Sign up for CodingPATSHALA", you agree to our <a href="#">terms of service</a> and <a href="#"> privacy policy</a>. 
+           We'll ocassionally send you account related emails.
+
+           </p>
+            {{!-- <input class="submit" type="button" value="Sign up if you're new!"> --}}
+            <p>New to CodingPATSHALA ? <a href="/register" style="color: rgb(0, 52, 221) text-decoration:none">Join us</a></p>
+        </form>
+        </div>
+
+    </main>
+    <footer>
+        
+        <div class="lowerfooter">
+            <p>&copy; All Rights Reserved. Designed by <a href="About_us.html" rel="nofollow" style="color: aquamarine">WebVoyagers</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
